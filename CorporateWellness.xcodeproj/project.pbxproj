@@ -96,6 +96,31 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		29A68DEB2A2A01A10045A7A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				29B12A452A24D5A000F19885 /* extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		29A68DEC2A2A01FA0045A7A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29B12A552A2517E800F19885 /* Event.swift */,
+				29B12A572A25188C00F19885 /* DailyEvents.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29A68DED2A2A023E0045A7A9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				29B12A492A24E83B00F19885 /* enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		29B12A2B2A24CAE200F19885 = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +150,9 @@
 				29B12A4D2A24EAAB00F19885 /* CalenderView.swift */,
 				29B12A4F2A24EABA00F19885 /* MessagesView.swift */,
 				29B12A512A24EAC200F19885 /* SettingsView.swift */,
-				29B12A492A24E83B00F19885 /* enums.swift */,
-				29B12A452A24D5A000F19885 /* extensions.swift */,
-				29B12A552A2517E800F19885 /* Event.swift */,
-				29B12A572A25188C00F19885 /* DailyEvents.swift */,
+				29A68DED2A2A023E0045A7A9 /* Enums */,
+				29A68DEB2A2A01A10045A7A9 /* Extensions */,
+				29A68DEC2A2A01FA0045A7A9 /* Models */,
 				29B12A3B2A24CAE300F19885 /* Assets.xcassets */,
 				29B12A3D2A24CAE300F19885 /* Preview Content */,
 			);
