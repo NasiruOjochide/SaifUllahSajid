@@ -143,6 +143,7 @@ struct Dashboard: View {
                     ForEach(events.indices) { event in
                             HStack(alignment: .top){
                                 Text(events[event].startTime.formatted(date: .omitted, time: .shortened))
+                                    .padding(.trailing)
                                 Spacer()
                                 VStack(alignment: .leading){
                                     Text(events[event].title)
@@ -171,23 +172,6 @@ struct Dashboard: View {
                             }
                             
                         }
-                    
-                    //                    Chart{
-                    //                        ForEach(events) { event in
-                    //                            BarMark(x: .value("jhcgfvb", 0..<1), y: .value("Start time", event.startTime, unit: .hour))
-                    //
-                    //
-                    ////                            RectangleMark( yStart: .value("fghd", event.startTime, unit: .hour), yEnd: .value("aer", event.stopTime, unit: .hour))
-                    ////                                .annotation{
-                    ////                                    Text(event.stopTime.formatted(date: .omitted, time: .shortened))
-                    ////                                }
-                    //                        }
-                    //                    }
-                    //                    .frame(height: 300)
-                    //                    .chartYAxis{
-                    //                        AxisMarks( position: .leading, values: events.map{$0.stopTime})
-                    //                    }
-                    //                    .chartXAxis(.hidden)
                 }
                 .padding()
                 .padding(.top, 40)
