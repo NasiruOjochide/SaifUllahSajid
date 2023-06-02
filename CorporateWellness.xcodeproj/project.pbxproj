@@ -121,6 +121,20 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		29A68DEE2A2A03610045A7A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29B12A392A24CAE200F19885 /* ContentView.swift */,
+				29B12A472A24E7E000F19885 /* Dashboard.swift */,
+				29B12A532A24F69F00F19885 /* TakeABreakView.swift */,
+				29B12A4B2A24EAA100F19885 /* NotesView.swift */,
+				29B12A4D2A24EAAB00F19885 /* CalenderView.swift */,
+				29B12A4F2A24EABA00F19885 /* MessagesView.swift */,
+				29B12A512A24EAC200F19885 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		29B12A2B2A24CAE200F19885 = {
 			isa = PBXGroup;
 			children = (
@@ -143,13 +157,7 @@
 				298B841F2A2693E40023FF9C /* Info.plist */,
 				298B84062A2693020023FF9C /* Fonts */,
 				29B12A372A24CAE200F19885 /* CorporateWellnessApp.swift */,
-				29B12A392A24CAE200F19885 /* ContentView.swift */,
-				29B12A472A24E7E000F19885 /* Dashboard.swift */,
-				29B12A532A24F69F00F19885 /* TakeABreakView.swift */,
-				29B12A4B2A24EAA100F19885 /* NotesView.swift */,
-				29B12A4D2A24EAAB00F19885 /* CalenderView.swift */,
-				29B12A4F2A24EABA00F19885 /* MessagesView.swift */,
-				29B12A512A24EAC200F19885 /* SettingsView.swift */,
+				29A68DEE2A2A03610045A7A9 /* Views */,
 				29A68DED2A2A023E0045A7A9 /* Enums */,
 				29A68DEB2A2A01A10045A7A9 /* Extensions */,
 				29A68DEC2A2A01FA0045A7A9 /* Models */,
