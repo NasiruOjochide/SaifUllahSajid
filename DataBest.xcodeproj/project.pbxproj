@@ -15,9 +15,10 @@
 		29945F4C2A27457A00F348A6 /* PlayfairDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29945F482A27457A00F348A6 /* PlayfairDisplay-Black.ttf */; };
 		29945F4D2A27457A00F348A6 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29945F492A27457A00F348A6 /* PlayfairDisplay-Regular.ttf */; };
 		29945F4E2A27457A00F348A6 /* PlayfairDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29945F4A2A27457A00F348A6 /* PlayfairDisplay-ExtraBold.ttf */; };
-		29945F512A2774B800F348A6 /* ReusableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29945F502A2774B800F348A6 /* ReusableViews.swift */; };
+		29945F512A2774B800F348A6 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29945F502A2774B800F348A6 /* Shapes.swift */; };
 		299C30D22A28F4ED0084121B /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299C30D12A28F4ED0084121B /* Employee.swift */; };
 		299C30D42A28FBB00084121B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299C30D32A28FBB00084121B /* Constants.swift */; };
+		29A68DF12A2A042C0045A7A9 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A68DF02A2A042C0045A7A9 /* DateExtension.swift */; };
 		29B3E35E2A278F2C00F80E39 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3E35D2A278F2C00F80E39 /* Dashboard.swift */; };
 		29B3E3622A278FE500F80E39 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3E3612A278FE500F80E39 /* ChartsView.swift */; };
 		29B3E3642A27900400F80E39 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3E3632A27900400F80E39 /* SettingsView.swift */; };
@@ -35,9 +36,10 @@
 		29945F492A27457A00F348A6 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		29945F4A2A27457A00F348A6 /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
 		29945F4F2A2745AA00F348A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		29945F502A2774B800F348A6 /* ReusableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViews.swift; sourceTree = "<group>"; };
+		29945F502A2774B800F348A6 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		299C30D12A28F4ED0084121B /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		299C30D32A28FBB00084121B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		29A68DF02A2A042C0045A7A9 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		29B3E35D2A278F2C00F80E39 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		29B3E3612A278FE500F80E39 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		29B3E3632A27900400F80E39 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -75,17 +77,13 @@
 			isa = PBXGroup;
 			children = (
 				29945F382A27414A00F348A6 /* DataBestApp.swift */,
-				29945F3A2A27414A00F348A6 /* ContentView.swift */,
-				29FAD9172A279237001224DD /* HomeView.swift */,
-				29B3E35D2A278F2C00F80E39 /* Dashboard.swift */,
-				29B3E3612A278FE500F80E39 /* ChartsView.swift */,
-				29B3E3632A27900400F80E39 /* SettingsView.swift */,
+				29A68DF22A2A055C0045A7A9 /* Views */,
+				29A68DEF2A2A03FC0045A7A9 /* Extensions */,
+				29A68DF42A2A06990045A7A9 /* Model */,
 				299C30D32A28FBB00084121B /* Constants.swift */,
-				299C30D12A28F4ED0084121B /* Employee.swift */,
-				29945F502A2774B800F348A6 /* ReusableViews.swift */,
 				29945F4F2A2745AA00F348A6 /* Info.plist */,
-				29945F462A27455400F348A6 /* Fonts */,
 				29945F3C2A27414B00F348A6 /* Assets.xcassets */,
+				29945F462A27455400F348A6 /* Fonts */,
 				29945F3E2A27414B00F348A6 /* Preview Content */,
 			);
 			path = DataBest;
@@ -108,6 +106,43 @@
 				29945F492A27457A00F348A6 /* PlayfairDisplay-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		29A68DEF2A2A03FC0045A7A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				29A68DF02A2A042C0045A7A9 /* DateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		29A68DF22A2A055C0045A7A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29945F3A2A27414A00F348A6 /* ContentView.swift */,
+				29FAD9172A279237001224DD /* HomeView.swift */,
+				29B3E35D2A278F2C00F80E39 /* Dashboard.swift */,
+				29B3E3612A278FE500F80E39 /* ChartsView.swift */,
+				29B3E3632A27900400F80E39 /* SettingsView.swift */,
+				29A68DF32A2A059B0045A7A9 /* Shapes */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29A68DF32A2A059B0045A7A9 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				29945F502A2774B800F348A6 /* Shapes.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		29A68DF42A2A06990045A7A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				299C30D12A28F4ED0084121B /* Employee.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,10 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B3E3642A27900400F80E39 /* SettingsView.swift in Sources */,
+				29A68DF12A2A042C0045A7A9 /* DateExtension.swift in Sources */,
 				299C30D22A28F4ED0084121B /* Employee.swift in Sources */,
 				29FAD9182A279237001224DD /* HomeView.swift in Sources */,
 				29945F3B2A27414A00F348A6 /* ContentView.swift in Sources */,
-				29945F512A2774B800F348A6 /* ReusableViews.swift in Sources */,
+				29945F512A2774B800F348A6 /* Shapes.swift in Sources */,
 				29B3E35E2A278F2C00F80E39 /* Dashboard.swift in Sources */,
 				29945F392A27414A00F348A6 /* DataBestApp.swift in Sources */,
 				29B3E3622A278FE500F80E39 /* ChartsView.swift in Sources */,
